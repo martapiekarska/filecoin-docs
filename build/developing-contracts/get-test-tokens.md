@@ -11,7 +11,7 @@ description: >-
 
 MetaMask is one of the easier ways to manage addresses on the Calibration testnet. MetaMask displays Filecoin EVM accounts in Ethereum `0x` format; on Filecoin testnets those accounts map to delegated `t4` [addresses](../../core-concepts/filecoin-evm-runtime/address-types.md). Follow the [MetaMask setup guide](../../networks-and-tools/assets/metamask-setup.md) if you haven’t set up an address in your MetaMask wallet yet.
 
-On Calibration, tFIL pays for transaction gas fees. Applications such as the `filecoin` CLI also require test USDFC for storage payments. Use the faucets below to get both tokens for the wallet you will use with the application.
+On Calibration, tFIL pays for gas and test USDFC pays for storage in applications such as the `filecoin` CLI. Request both tokens for the same wallet.
 
 ### Get tFIL
 
@@ -29,16 +29,9 @@ On Calibration, tFIL pays for transaction gas fees. Applications such as the `fi
 
 ### Get test USDFC
 
-The USDFC faucet calls the test token `tUSDFC`.
-
 1. In MetaMask, select the **Filecoin Calibration** network and copy the same wallet's `0x` address used above.
-2. Open the [Filecoin Calibration USDFC faucet](https://forest-explorer.chainsafe.dev/faucet/calibnet_usdfc).
-3. Paste your address into the target address field and click **Claim tUSDFC**.
-4. Wait for the transaction to be marked **confirmed** under **Transactions**. Follow its transaction link to view the transfer in a block explorer.
-
-If the token does not appear in MetaMask, connect the same wallet to the [USDFC testnet application](https://stg.usdfc.net/). On the Dashboard, find **Add USDFC to Wallet**, click **Click here**, and approve the token import in your wallet.
-
-Faucet requests are rate limited. If you reach a limit, wait for the displayed cooldown before trying again. You can also [mint test USDFC using tFIL as collateral](https://docs.secured.finance/usdfc-stablecoin/getting-started/getting-test-usdfc-on-testnet).
+2. Open the [Filecoin Calibration USDFC faucet](https://forest-explorer.chainsafe.dev/faucet/calibnet_usdfc), paste your address, and click **Claim tUSDFC**.
+3. Wait for the transaction to be marked **confirmed** under **Transactions**. Follow its link to view the transfer in a block explorer.
 
 ## Local testnet
 
